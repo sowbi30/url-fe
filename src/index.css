@@ -1,13 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url(../public/bgselect.webp) no-repeat center center fixed;
+  background-size:cover;
+  width: auto;
+  height: fit-content;
+  min-height: 90vh;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+table,
+th,
+td {
+  border: 1px solid black !important;
+}
+.auth-inner {
+  /* ... */
+  color: #333; /* Set a color for the text */
+}
+
+.form-control {
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.auth-inner form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add some margin to the form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #dee4ea38; /* Set the checkbox color when checked */
+  border-color: #007bff;
+}
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: rgba(236, 222, 222, 0.458); /* Use rgba for a semi-transparent white background */
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.btn {
+  background: linear-gradient(to right, #a8e55dc0, #f1f863f1); /* Use a linear gradient for a glossy effect */
+  color: #b50808 !important;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover for a glossy feel */
+}
+
+.auth-inner form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Add some transparency to the checkbox background */
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: rgba(0, 123, 255, 0.7);
 }
